@@ -1,0 +1,10 @@
+server:
+  port: 8080
+  servlet:
+    context-path: /api/v1
+
+apilayer:
+  currency:
+    baseUrl: ${APILAYER_CURRENCY_BASE_URL}
+    key: ${APILAYER_CURRENCY_KEY}
+    conversionUrl: /convert?to={to}&from={from}&amount={amount}
